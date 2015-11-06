@@ -1,3 +1,0 @@
-cout 
-
-new line
