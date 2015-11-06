@@ -1,4 +1,4 @@
-﻿//��Ȩ���� ����Դ
+﻿//版权所有 戴海源
 
 #include <iostream>
 #include <queue>
