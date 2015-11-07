@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1446880536 source:e:\noip\main.cpp
+	<iostream>
+	<queue>
+
