@@ -1,15 +1,9 @@
 #include <iostream>
 #include <iomanip>
-#include <cmath>
 using namespace  std;
 
-const  double pi = 3.14159;
-
 int main(int argc, char** argv) {
-   double a,b ;
+   int  a,b;
    cin >> a >> b;
-   cout << setprecision(4) << fmod(a,b) <<" ";
-
-
-
+   cout << a+b;
 }

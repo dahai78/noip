@@ -8,7 +8,7 @@ const  double pi = 3.14159;
 int main(int argc, char** argv) {
    double a,b ;
    cin >> a >> b;
-   cout << setprecision(4) << fmod(a,b) <<" ";
+   cout <<  fmod(a,b) <<" ";
 
 
 
