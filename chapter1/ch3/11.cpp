@@ -12,7 +12,7 @@ const  double pi = 3.14159;
 int main(int argc, char** argv) {
    double a,b ;
    cin >> a >> b;
-   cout <<  fmod(a,b) <<" ";
+   cout <<  fmod(a,b) <<" ";  // 不能用 % 求余运算
 
 
 

@@ -10,7 +10,7 @@ const  double pi = 3.14159;
 
 int main(int argc, char** argv) {
   long long a, b;
-  cin >> a >> b;
-  cout << a*b;
+  cin >> a >> b;  
+  cout << a*b;  // 如果用 int a, int a 算出的结果为Int类型，  可能会超出Int范围
 
 }

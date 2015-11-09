@@ -5,6 +5,8 @@
 #include <cmath>
 #include <iomanip>
 
+
+// 定义函数 计算 两点间的距离。
 float cal(float xm,float ym , float xn, float yn )
 {
 	return sqrt(  (xm-xn)*(xm-xn) + (ym-yn)*(ym-yn));

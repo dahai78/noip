@@ -11,7 +11,10 @@ int main(int argc, char** argv) {
 	int n, x, y;
 	cin >> n >> x >>y;
 	int ans;
-	ans =  n - ceil( (double)y/x);
+	ans =  n - ceil( (double)y/x);   // cel 向上取整数  ，就是所谓进一法。 
+	//也可以用 ans =  n - ceil( 0.1*y/x);     
+	
+	ans =  n - ceil( y*1.0/x);
 	if(ans <= 0) ans = 0;
 	cout << ans;
 }

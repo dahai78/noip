@@ -15,7 +15,7 @@ int main(int argc, char** argv) {
   //cout <<  setprecision(0) << fixed << pow(2, n);
   //如果cout << pow(2, n);  只能通过6组数据
 
-  cout << (int) pow(2, n);
+  cout << (int) pow(2, n); //转化成整数， 会截掉小数点尾巴
 
 
 }
