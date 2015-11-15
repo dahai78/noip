@@ -9,12 +9,12 @@ int main(int argc, char** argv) {
     int n;
     cin >>n ;
 
-    bool  b ;
-    b = n;
+    bool  b ; 
+    b = n;      //非零的数被解释称 true 
 
-    n = b;
+    n = b;      //true 被解释称 1    false 解释成 0
 
-    cout << n;
+    cout << n;   
 }
 /*
 整型与布尔型的转换

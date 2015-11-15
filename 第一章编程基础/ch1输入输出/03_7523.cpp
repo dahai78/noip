@@ -11,7 +11,7 @@ int main(int argc, char** argv) {
 	int a,b,c;
 
 	cin >> a >> b >> c;
-	cout << setw(8) << a <<" " ;   // setw() 这只宽度（width）。 对后面的输出起作用一次
+	cout << setw(8) << a <<" " ;      // setw() 这只宽度（width）。 这个指令对后面的输出起作用一次 
 	cout << setw(8) << b << " ";
 	cout << setw(8) << c;
 	return 0;

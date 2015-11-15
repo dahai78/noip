@@ -6,7 +6,7 @@
 using namespace  std;
 
 int main(int argc, char** argv) {
- 	cout <<  "Hello, World " ; //输出是 注意 字符串中的空格符号 
+ 	cout <<  "Hello, World " ;  //输出时候要注意：字符串中的空格符号字符串中的空格符号 
 	return 0;
 }
 

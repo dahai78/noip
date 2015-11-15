@@ -10,7 +10,7 @@ int main(int argc, char** argv) {
 
 	int a;
 
-	cin>> a >> a;
+	cin>> a >> a;    //Ïàµ±ÓÚ cin >> a ;  cin >> a;
 	cout << a;
 
 	return 0;

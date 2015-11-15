@@ -19,7 +19,7 @@ int main(int argc, char** argv) {
 
          flag = false;
          cout <<"-" <<i;
-         system("pause");
+         //system("pause");
          return 0;
         }
      else{

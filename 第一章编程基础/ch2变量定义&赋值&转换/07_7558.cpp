@@ -9,8 +9,10 @@ int main(int argc, char** argv) {
 
     char c;
     cin >> c;
-    int n = c;
+	
+    int n = c;   //注意类型
     cout << n;
+	
 	return 0;
 }
 /*

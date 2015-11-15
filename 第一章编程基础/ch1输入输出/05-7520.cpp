@@ -7,7 +7,7 @@ using namespace std;
 
 int main(int argc, char** argv) {
 
-	double a;
+	double a;  //单精度浮点数 float  双精度浮点数用 double
 	cin >> a;
 	cout << setprecision(12) << fixed <<  a;
 	return 0;

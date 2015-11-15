@@ -8,7 +8,7 @@ using namespace  std;
 int main(int argc, char** argv) {
     float  f = 323.23;
     double  d = 23223.23;
-    cout <<  sizeof( f ) << ' ' << sizeof(d);
+    cout <<  sizeof( f ) << ' ' << sizeof( d );
 }
 /*
 分别定义float，double类型的变量各一个，并依次输出它们的存储空间大小（单位：字节）。

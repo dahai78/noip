@@ -9,7 +9,7 @@ int main(int argc, char** argv) {
 
 	float a;
 	cin >> a;
-	cout << setprecision(3) << fixed <<  a;  //setprecision() + fixed 设置小数点后面的位数 
+	cout << setprecision(3) << fixed <<  a;   //setprecision()   跟 fixed() 结合： 设置小数点后面的位数 
 	return 0;
 
 }
