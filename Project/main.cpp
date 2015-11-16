@@ -5,41 +5,31 @@
 #include <cstdlib>
 using namespace  std;
 
-const  int yue = 300;
 
 int main(int argc, char** argv) {
-   bool  flag = true;
-   int mother =0;
-   int jingjing =0;
-   for(int i=1;i<=12;i++){
-     int m;
-     cin >> m;
-     if( jingjing + 300 < m )
-        {
+   int n;
+   cin >> n;
 
-         flag = false;
-         cout <<"-" <<i;
-         system("pause");
-         return 0;
-        }
-     else{
+   int ans = 0;
+   int max = 0;
+   for(int  i=1; i<=n; i++)
+   {
+       int shou; //èˆ’å¼ åŽ‹
+       int  shu; // èˆ’å¼ åŽ‹
+       cin >> shou >>shu;
+       if( shou>=90 && shou <=140
+           && shu >=60 && shu <=90){
+               max++;
+           }
+        else {
+                if (max > ans )
+                     ans = max;
+                max=0;
+             }
+      }
 
-        int yu = (jingjing + 300 - m) % 100;
-        mother += jingjing + 300 -m -yu ;
-        jingjing = yu;
-/*
-        cout << "µÚ"<<i <<"ÔÂ" ;
-        cout << "Ïû·Ñ " << m;
-        cout << "½ò½ò " << jingjing<< endl;
-        cout << "ÂèÂè " <<  mother << endl;
+      cout << ans;
 
- */
-     }
-   }
+}
 
-  if(flag==true)
-    cout << jingjing + mother *( 1+ 0.2);
-
-
-  }
 

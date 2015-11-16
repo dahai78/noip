@@ -9,10 +9,12 @@ int main(int argc, char** argv) {
 
 
   if(x>y) cout << ">";
-  else if (x == y)
+  else if (x == y){
             cout << "=";
-        else
+		}
+		else{
             cout << "<";
+		}
 
   return 0;
 }
