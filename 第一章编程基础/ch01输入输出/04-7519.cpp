@@ -9,13 +9,12 @@ int main(int argc, char** argv) {
 
 	float a;
 	cin >> a;
-	cout << setprecision(3) << fixed <<  a;   //setprecision()   跟 fixed() 结合： 设置小数点后面的位数 
+	cout << setprecision(3) << fixed <<  a;   //setprecision() 跟 fixed 结合的作用： 设置小数点后面的位数 
 	return 0;
 
 }
 
 /*
-
 输出保留3位小数的浮点数
 
 描述
@@ -23,10 +22,14 @@ int main(int argc, char** argv) {
 
 输入
 只有一行，一个单精度浮点数。
+
 输出
 也只有一行，读入的单精度浮点数。
+
 样例输入
 12.34521
+
 样例输出
 12.345
+
 */

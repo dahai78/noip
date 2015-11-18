@@ -11,7 +11,8 @@ int main(int argc, char** argv) {
 	int n, x, y;
 	cin >> n >> x >>y;
 	int ans;
-	ans =  n - ceil( (double)y/x);   // cel 向上取整数  ，就是所谓进一法。 
+	ans =  n - ceil( (double)y/x);   // ceil 向上取整数  ，就是所谓进一法。 
+	
 	//也可以用 ans =  n - ceil( 0.1*y/x);     
 	
 	ans =  n - ceil( y*1.0/x);
@@ -28,12 +29,16 @@ int main(int argc, char** argv) {
 
 输入
 输入仅一行，包括n，x和y（均为整数）。
+
 输出
 输出也仅一行，剩下的苹果个数
+
 样例输入
 10 4 9
+
 样例输出
 7
+
 提示
 注意：是要求完整的苹果数。
 

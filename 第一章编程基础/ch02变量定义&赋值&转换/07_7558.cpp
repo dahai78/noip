@@ -11,7 +11,7 @@ int main(int argc, char** argv) {
     cin >> c;
 	
     int n = c;   //注意类型
-    cout << n;
+    cout << n;      // n为整数 
 	
 	return 0;
 }
@@ -24,10 +24,16 @@ int main(int argc, char** argv) {
 
 输入
 一个除空格以外的可见字符。
+
 输出
 一个十进制整数，即该字符的ASCII码。
+
 样例输入
+
 A
 样例输出
+
 65
+
+
 */

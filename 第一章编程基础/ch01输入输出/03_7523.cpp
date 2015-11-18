@@ -11,14 +11,13 @@ int main(int argc, char** argv) {
 	int a,b,c;
 
 	cin >> a >> b >> c;
-	cout << setw(8) << a <<" " ;      // setw() 这只宽度（width）。 这个指令对后面的输出起作用一次 
+	cout << setw(8) << a <<" " ;      // setw() 这只宽度（width）。 这个指令有点特别：只对紧随后的输出起作用一次 
 	cout << setw(8) << b << " ";
 	cout << setw(8) << c;
 	return 0;
 }
 
 /*
-
 对齐输出
 
 描述
@@ -26,10 +25,14 @@ int main(int argc, char** argv) {
 
 输入
 只有一行，包含三个整数，整数之间以一个空格分开。
+
 输出
 只有一行，按照格式要求依次输出三个整数，之间以一个空格分开。
+
 样例输入
 123456789 0 -1
+
 样例输出
 123456789        0       -1
+
 */

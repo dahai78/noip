@@ -11,7 +11,8 @@ int main(int argc, char** argv) {
 	int r,h;
 	cin >> h >> r;
 	
-	int tong = ceil ( 20000 / ( pi * r * r * h ) );
+	int tong = ceil ( 20000 / ( pi * r * r * h ) );    
+	// ceil 意思是天花板：ceil 向高处，向大的方向取整。
 	
 	cout << tong ;    
 	
@@ -26,12 +27,16 @@ int main(int argc, char** argv) {
 
 输入
 输入有一行：包行两个整数，以一个空格分开，分别表示小圆桶的深h和底面半径r，单位都是厘米。
+
 输出
 输出一行，包含一个整数，表示大象至少要喝水的桶数。
+
 样例输入
 23 11
+
 样例输出
 3
+
 提示
 如果一个圆桶的深为h厘米，底面半径为r厘米，那么它最多能装Pi * r * r * h立方厘米的水。(设Pi=3.14159) 
 1升 = 1000毫升

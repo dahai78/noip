@@ -12,7 +12,9 @@ int main(int argc, char** argv) {
     char c;
     c = n;
 
-    cout << c;
+    cout << c;   //打印的不是字符的ASCII码， cout能够智能判别C是个字符类型，打印字符
+	
+	return 0;
 }
 /*
 
@@ -23,11 +25,15 @@ int main(int argc, char** argv) {
 
 输入
 一个整数，即字符的ASCII码，保证存在对应的可见字符。
+
 输出
 一行，包含相应的字符。
+
 样例输入
 65
+
 样例输出
 A
+
 
 */

@@ -12,7 +12,7 @@ const  double pi = 3.14159;
 int main(int argc, char** argv) {
    double a,b ;
    cin >> a >> b;
-   cout <<  fmod(a,b) <<" ";  // 不能用 % 求余运算
+   cout <<  fmod(a,b) <<" ";   // 不能用 % 求余运算： %只适合整数相除求余。
 }
 
 /*
@@ -23,10 +23,13 @@ int main(int argc, char** argv) {
 
 输入
 输入仅一行，包括两个双精度浮点数a和b。
+
 输出
 输出也仅一行，a÷b的余数
+
 样例输入
 73.263 0.9973
+
 样例输出
 0.4601
 

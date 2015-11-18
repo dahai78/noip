@@ -7,7 +7,7 @@ using namespace std;
 
 int main(int argc, char** argv) {
 
-	double a;  //单精度浮点数 float  双精度浮点数用 double
+	double a;   //单精度浮点数 float  双精度浮点数用 double
 	cin >> a;
 	cout << setprecision(12) << fixed <<  a;
 	return 0;
@@ -22,10 +22,14 @@ int main(int argc, char** argv) {
 
 输入
 只有一行，一个双精度浮点数。
+
 输出
 也只有一行，保留12位小数的浮点数。
+
 样例输入
 3.1415926535798932
+
 样例输出
 3.141592653580
+
 */
