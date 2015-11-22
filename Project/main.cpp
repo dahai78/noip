@@ -1,39 +1,64 @@
 #include <iostream>
-#include <iomanip>
 #include <cmath>
-#include <algorithm>
-#include <cstdlib>
-using namespace  std;
+#include <fstream>
+using namespace std;
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main()
-{
-    int m,k;
-    cin >> m >> k;
+int n;
+int num[100001];
 
-    bool ans=true;
-    if( m%19 !=0)
-        ans = false;
+int search(int x){
+	int left=1;
+	int right=n;
+	int ans=0;
+	while(left < right)	{
 
-    int total =0;
-    if(ans == true){
-       while(  m>0)
-        {
-            if( m%10 ==3 ) total++;
-            m = m/10;
-        }
-    }
+		int middle = (left+right)/2;
+		/*
+		cout << "left is " << left << " ";
+		cout << "right is " << right << " ";
+		cout <<"middle is "<< middle <<endl;
 
-    if(total !=k) ans=false;
+		*/
 
-    if(ans == true)
-        cout <<"YES";
-    else
-        cout <<"NO";
+		if( num[middle] == x) {
+			 ans=num[middle];
+			 return ans;
+		}
 
+		if ((left+1==right) && (num[left]<x) && (num[right]>x) ){
 
+			 ans = ( fabs(num[left] - x) <= fabs( num[right]-x)) ? num[left] : num[right];
+			 return ans;
 
+			}
 
-  return 0;
+		if( x > num[middle] )
+            left = middle+1;
+		else right=middle-1;
+	}
+
+	return num[left];
 }
 
+int main(int argc, char** argv) {
 
+   //freopen("find.in","r",stdin);
+    //freopen("find.out","w",stdout);
+
+
+	cin >> n;
+	for(int i=1;i<=n;i++)
+	  cin >> num[i];
+
+	int m;
+	cin >> m;
+	for(int i=1;i<=m;i++){
+		int x;
+		cin >> x;
+		cout << search( x ) << endl;
+		//cout << "************"<<endl;
+	}
+
+	return 0;
+}

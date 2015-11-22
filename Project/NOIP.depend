@@ -3,10 +3,8 @@
 	<iostream>
 	<queue>
 
-1447754922 source:e:\noip\project\main.cpp
+1447931734 source:e:\noip\project\main.cpp
 	<iostream>
-	<iomanip>
 	<cmath>
-	<algorithm>
-	<cstdlib>
+	<fstream>
 
